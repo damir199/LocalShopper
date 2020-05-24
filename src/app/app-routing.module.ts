@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
+import { DefaultComponent } from './layouts/default/default.component';
 
 
 const routes: Routes = [
   {
     path: "",
-    component: AppComponent,
+    component: DefaultComponent,
   },
 
 ];

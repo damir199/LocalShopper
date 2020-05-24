@@ -4,25 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SearchBarComponent } from './shared/search-bar/search-bar.component';
-import { LoginComponent } from './auth/login/login.component';
-import { RegisterComponent } from './auth/register/register.component';
-import { ErrorComponent } from './error/error/error.component';
+import { DefaultModule } from './layouts/default/default.module';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchBarComponent,
-    LoginComponent,
-    RegisterComponent,
-    ErrorComponent,
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    DefaultModule
   ],
   providers: [],
   bootstrap: [AppComponent]

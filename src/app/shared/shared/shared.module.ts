@@ -6,7 +6,6 @@ import { AngularMaterialModule } from 'src/app/modules/angular-material/angular-
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FlexLayoutModule } from "@angular/flex-layout";
 import { SearchBarComponent } from '../search-bar/search-bar.component';
 import { LoginComponent } from 'src/app/auth/login/login.component';
 import { RegisterComponent } from 'src/app/auth/register/register.component';
@@ -31,7 +30,6 @@ import { ErrorComponent } from 'src/app/error/error/error.component';
     HttpClientModule,
     RouterModule,
     AngularMaterialModule,
-    FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
     AngularMaterialModule
