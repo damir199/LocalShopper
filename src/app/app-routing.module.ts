@@ -6,6 +6,7 @@ import { registerLocaleData } from '@angular/common';
 import { RegisterComponent } from './auth/register/register.component';
 import { VendorRegistrationComponent } from './auth/vendor-registration/vendor-registration.component';
 import { StoreComponent } from './components/store/store.component';
+import { AuthGuard } from './auth/auth.guard';
 
 
 const routes: Routes = [
@@ -26,7 +27,7 @@ const routes: Routes = [
         component: VendorRegistrationComponent,
       },
       {
-        path: "store",
+        path: "stores/:id",
         component: StoreComponent,
       },
     ]
@@ -36,6 +37,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [AuthGuard],
 })
 export class AppRoutingModule { }
