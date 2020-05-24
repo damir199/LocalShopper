@@ -10,6 +10,7 @@ import { SearchBarComponent } from '../search-bar/search-bar.component';
 import { LoginComponent } from 'src/app/auth/login/login.component';
 import { RegisterComponent } from 'src/app/auth/register/register.component';
 import { ErrorComponent } from 'src/app/error/error/error.component';
+import { VendorRegistrationComponent } from 'src/app/auth/vendor-registration/vendor-registration.component';
 
 
 
@@ -21,7 +22,8 @@ import { ErrorComponent } from 'src/app/error/error/error.component';
     LoginComponent,
     RegisterComponent,
     SearchBarComponent,
-    ErrorComponent
+    ErrorComponent,
+    VendorRegistrationComponent
 
 
   ],
@@ -41,7 +43,8 @@ import { ErrorComponent } from 'src/app/error/error/error.component';
     LoginComponent,
     RegisterComponent,
     SearchBarComponent,
-    ErrorComponent
+    ErrorComponent,
+    VendorRegistrationComponent
 
   ],
 })

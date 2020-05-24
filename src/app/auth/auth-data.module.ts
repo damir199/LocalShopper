@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { VendorRegistrationComponent } from './vendor-registration/vendor-registration.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [VendorRegistrationComponent],
   imports: [
     CommonModule
   ]
