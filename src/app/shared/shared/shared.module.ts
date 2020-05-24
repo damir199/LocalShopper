@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { SearchBarComponent } from '../search-bar/search-bar.component';
 
 
 
@@ -14,7 +15,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
   declarations: [
     HeaderComponent,
     FooterComponent,
-    AngularMaterialModule
+    SearchBarComponent
+
   ],
   imports: [
     CommonModule,
@@ -24,10 +26,12 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
+    AngularMaterialModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
+    SearchBarComponent
 
   ],
 })
