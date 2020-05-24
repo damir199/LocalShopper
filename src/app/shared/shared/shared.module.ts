@@ -8,6 +8,9 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { SearchBarComponent } from '../search-bar/search-bar.component';
+import { LoginComponent } from 'src/app/auth/login/login.component';
+import { RegisterComponent } from 'src/app/auth/register/register.component';
+import { ErrorComponent } from 'src/app/error/error/error.component';
 
 
 
@@ -15,7 +18,12 @@ import { SearchBarComponent } from '../search-bar/search-bar.component';
   declarations: [
     HeaderComponent,
     FooterComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    LoginComponent,
+    RegisterComponent,
+    SearchBarComponent,
+    ErrorComponent
+
 
   ],
   imports: [
@@ -31,7 +39,11 @@ import { SearchBarComponent } from '../search-bar/search-bar.component';
   exports: [
     HeaderComponent,
     FooterComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    LoginComponent,
+    RegisterComponent,
+    SearchBarComponent,
+    ErrorComponent
 
   ],
 })

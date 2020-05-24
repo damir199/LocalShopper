@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchBarComponent } from './shared/search-bar/search-bar.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { ErrorComponent } from './error/error/error.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { RegisterComponent } from './auth/register/register.component';
     SearchBarComponent,
     LoginComponent,
     RegisterComponent,
+    ErrorComponent,
 
   ],
   imports: [
