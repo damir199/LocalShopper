@@ -1,24 +1,29 @@
-<div>
-    <mat-card>
-        <form #loginForm="ngForm">
-            <mat-form-field>
-                <input matInput name="email" ngModel type="email" placeholder="Email" #emailInput="ngModel" required
-                    email />
-                <mat-error *ngIf="emailInput.invalid">Please enter a valid email.</mat-error>
-            </mat-form-field>
-            <br />
-            <mat-form-field>
-                <input matInput name="password" ngModel type="password" placeholder="Password" #passwordInput="ngModel"
-                    required password />
-                <mat-error *ngIf="passwordInput.invalid">Please enter a valid password.</mat-error>
-            </mat-form-field>
-            <br />
-            <button class="loginButton" mat-raised-button color="primary" type="submit">
-                Login
-            </button>
-        </form>
-        <mat-card-actions>
-            <button mat-button routerLink="/register">Register</button>
-        </mat-card-actions>
-    </mat-card>
+<div class="wrapper">
+    <div class="content">
+        <mat-card>
+            <form #loginForm="ngForm">
+                <mat-form-field>
+                    <input matInput name="email" ngModel type="email" placeholder="Email" #emailInput="ngModel" required
+                        email />
+                    <mat-error *ngIf="emailInput.invalid">Please enter a valid email.</mat-error>
+                </mat-form-field>
+                <br />
+                <mat-form-field>
+                    <input matInput name="password" ngModel type="password" placeholder="Password"
+                        #passwordInput="ngModel" required password />
+                    <mat-error *ngIf="passwordInput.invalid">Please enter a valid password.</mat-error>
+                </mat-form-field>
+                <br />
+                <button style="margin-bottom: 0.5em;" mat-raised-button color="primary" type="submit">
+                    Login
+                </button>
+
+                <button mat-button routerLink="/register">
+                    Register
+                </button>
+
+            </form>
+
+        </mat-card>
+    </div>
 </div>
