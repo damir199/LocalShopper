@@ -1,7 +1,8 @@
 <form class="example-form">
-    <mat-form-field class="search-bar">
-        <input type="text" placeholder="Type Your Postcode" aria-label="Number" matInput [formControl]="myControl"
-            [matAutocomplete]="auto">
+    <mat-form-field appearance="none" class="search-bar">
+        <div style="text-align: center;  padding-top: 8px;">
+            <input placeholder="Postcode" matInput [formControl]="myControl" [matAutocomplete]="auto">
+        </div>
         <mat-autocomplete #auto="matAutocomplete">
             <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
                 {{option}}
