@@ -16,7 +16,6 @@ import { VendorRegistrationComponent } from 'src/app/auth/vendor-registration/ve
 import { ProductComponent } from 'src/app/components/product/product.component';
 import { StoreComponent } from 'src/app/components/store/store.component';
 import { LandingSearchComponent } from 'src/app/components/landing-search/landing-search.component';
-import { AuthModule } from 'src/app/auth/auth.module';
 
 
 
@@ -42,7 +41,7 @@ import { AuthModule } from 'src/app/auth/auth.module';
     ReactiveFormsModule,
     AngularMaterialModule,
     FlexLayoutModule,
-    AuthModule
+
   ],
   exports: [
     HeaderComponent,
