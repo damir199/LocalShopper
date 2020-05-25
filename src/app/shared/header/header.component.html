@@ -1,10 +1,9 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <button mat-icon-button>
-            <mat-icon>menu</mat-icon>
+        <button mat-icon-button routerLink="/">
+            <mat-icon>home</mat-icon>
         </button>
 
-        <span>LSM</span>
 
         <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
             <ul fxLayout="row" fxLayoutGap="20px">
@@ -23,7 +22,7 @@
                         <mat-icon>person_outline</mat-icon>
                     </button>
                     <mat-menu #menu="matMenu">
-                        <button mat-menu-item>
+                        <button mat-menu-item routerLink="/login">
                             <mat-icon>exit_to_app</mat-icon>
                             Login
                         </button>
