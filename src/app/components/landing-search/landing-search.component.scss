@@ -1,0 +1,23 @@
+:host {
+    height: 100%
+}
+
+.wrapper{
+    
+    text-align: center;
+    
+    
+}
+
+
+.content{
+    background-image: url('/src/assets/images/background-main.jpg');
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 70%;
+   
+}

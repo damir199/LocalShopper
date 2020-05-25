@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { DefaultComponent } from './default.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared/shared.module';
+import { MatSidenavModule } from "@angular/material/sidenav";
+
 
 
 
@@ -16,6 +18,7 @@ import { SharedModule } from 'src/app/shared/shared/shared.module';
     CommonModule,
     RouterModule,
     SharedModule,
+    MatSidenavModule
 
 
   ]

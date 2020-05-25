@@ -17,6 +17,7 @@ import { ErrorComponent } from 'src/app/error/error/error.component';
 import { VendorRegistrationComponent } from 'src/app/auth/vendor-registration/vendor-registration.component';
 import { ProductComponent } from 'src/app/components/product/product.component';
 import { StoreComponent } from 'src/app/components/store/store.component';
+import { LandingSearchComponent } from 'src/app/components/landing-search/landing-search.component';
 
 
 
@@ -31,7 +32,8 @@ import { StoreComponent } from 'src/app/components/store/store.component';
     ErrorComponent,
     VendorRegistrationComponent,
     ProductComponent,
-    StoreComponent
+    StoreComponent,
+    LandingSearchComponent
 
 
   ],
@@ -55,7 +57,8 @@ import { StoreComponent } from 'src/app/components/store/store.component';
     ErrorComponent,
     VendorRegistrationComponent,
     ProductComponent,
-    StoreComponent
+    StoreComponent,
+    LandingSearchComponent
 
   ],
 })

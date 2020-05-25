@@ -8,6 +8,7 @@ import { VendorRegistrationComponent } from './auth/vendor-registration/vendor-r
 import { StoreComponent } from './components/store/store.component';
 import { AuthGuard } from './auth/auth.guard';
 import { ProductComponent } from './components/product/product.component';
+import { LandingSearchComponent } from './components/landing-search/landing-search.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,10 @@ const routes: Routes = [
     path: "",
     component: DefaultComponent,
     children: [
+      {
+        path: "",
+        component: LandingSearchComponent,
+      },
       {
         path: "login",
         component: LoginComponent,
