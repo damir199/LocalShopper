@@ -1,5 +1,6 @@
 <app-header></app-header>
 <mat-drawer-container>
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
     <router-outlet></router-outlet>
 </mat-drawer-container>
 
