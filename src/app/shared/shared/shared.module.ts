@@ -11,13 +11,12 @@ import { FooterComponent } from '../footer/footer.component';
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 
-import { RegisterComponent } from 'src/app/auth/register/register.component';
-import { LoginComponent } from 'src/app/auth/login/login.component';
 import { ErrorComponent } from 'src/app/error/error/error.component';
 import { VendorRegistrationComponent } from 'src/app/auth/vendor-registration/vendor-registration.component';
 import { ProductComponent } from 'src/app/components/product/product.component';
 import { StoreComponent } from 'src/app/components/store/store.component';
 import { LandingSearchComponent } from 'src/app/components/landing-search/landing-search.component';
+import { AuthModule } from 'src/app/auth/auth.module';
 
 
 
@@ -25,9 +24,6 @@ import { LandingSearchComponent } from 'src/app/components/landing-search/landin
   declarations: [
     HeaderComponent,
     FooterComponent,
-    SearchBarComponent,
-    LoginComponent,
-    RegisterComponent,
     SearchBarComponent,
     ErrorComponent,
     VendorRegistrationComponent,
@@ -45,14 +41,12 @@ import { LandingSearchComponent } from 'src/app/components/landing-search/landin
     FormsModule,
     ReactiveFormsModule,
     AngularMaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AuthModule
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
-    SearchBarComponent,
-    LoginComponent,
-    RegisterComponent,
     SearchBarComponent,
     ErrorComponent,
     VendorRegistrationComponent,
