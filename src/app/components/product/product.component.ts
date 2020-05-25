@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchBarComponent } from "src/app/shared/search-bar/search-bar.component";
 
 @Component({
   selector: 'app-product',

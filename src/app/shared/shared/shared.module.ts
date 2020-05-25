@@ -8,6 +8,8 @@ import { AngularMaterialModule } from 'src/app/modules/angular-material/angular-
 import { SearchBarComponent } from '../search-bar/search-bar.component';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { FlexLayoutModule } from "@angular/flex-layout";
+
 
 import { RegisterComponent } from 'src/app/auth/register/register.component';
 import { LoginComponent } from 'src/app/auth/login/login.component';
@@ -40,7 +42,8 @@ import { StoreComponent } from 'src/app/components/store/store.component';
     AngularMaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    FlexLayoutModule
   ],
   exports: [
     HeaderComponent,

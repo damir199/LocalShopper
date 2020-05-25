@@ -7,6 +7,7 @@ import { RegisterComponent } from './auth/register/register.component';
 import { VendorRegistrationComponent } from './auth/vendor-registration/vendor-registration.component';
 import { StoreComponent } from './components/store/store.component';
 import { AuthGuard } from './auth/auth.guard';
+import { ProductComponent } from './components/product/product.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,10 @@ const routes: Routes = [
       {
         path: "stores/:id",
         component: StoreComponent,
+      },
+      {
+        path: "products",
+        component: ProductComponent,
       },
     ]
   },
