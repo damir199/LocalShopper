@@ -1,9 +1,8 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { VendorRegistrationComponent } from './vendor-registration/vendor-registration.component';
-
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { LoginComponent } from "./login/login.component";
+import { RegisterComponent } from "./register/register.component";
+import { VendorRegistrationComponent } from "./vendor-registration/vendor-registration.component";
 
 const routes: Routes = [
   {
@@ -18,11 +17,11 @@ const routes: Routes = [
     path: "register-vendor",
     component: VendorRegistrationComponent,
   },
-]
+];
 
 @NgModule({
   declarations: [],
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AuthRoutingModule { }
+export class AuthRoutingModule {}
