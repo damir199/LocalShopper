@@ -1,38 +1,35 @@
 <mat-toolbar color="primary">
-    <mat-toolbar-row>
-        <button mat-icon-button routerLink="/">
-            <mat-icon>home</mat-icon>
-        </button>
+  <mat-toolbar-row>
+    <button mat-icon-button routerLink="/">
+      <mat-icon>home</mat-icon>
+    </button>
 
-
-        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
-            <ul fxLayout="row" fxLayoutGap="20px">
-                <li>
-                    <button mat-icon-button>
-                        <mat-icon>settings</mat-icon>
-                    </button>
-                </li>
-                <li>
-                    <button mat-icon-button>
-                        <mat-icon>help_outline</mat-icon>
-                    </button>
-                </li>
-                <li>
-                    <button mat-button [matMenuTriggerFor]="menu">
-                        <mat-icon>person_outline</mat-icon>
-                    </button>
-                    <mat-menu #menu="matMenu">
-                        <button mat-menu-item routerLink="/auth/login">
-                            <mat-icon>exit_to_app</mat-icon>
-                            Login
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>exit_to_app</mat-icon>
-                            Logout
-                        </button>
-                    </mat-menu>
-                </li>
-            </ul>
-        </div>
-    </mat-toolbar-row>
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+      <ul fxLayout="row" fxLayoutGap="20px">
+        <li>
+          <button mat-button [matMenuTriggerFor]="menu">
+            <mat-icon>person_outline</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button
+              mat-menu-item
+              *ngIf="!userAuthenticated"
+              routerLink="/auth/login"
+            >
+              <mat-icon>exit_to_app</mat-icon>
+              Login
+            </button>
+            <button
+              mat-menu-item
+              (click)="onLogout()"
+              *ngIf="userAuthenticated"
+            >
+              <mat-icon>exit_to_app</mat-icon>
+              Logout
+            </button>
+          </mat-menu>
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar-row>
 </mat-toolbar>
