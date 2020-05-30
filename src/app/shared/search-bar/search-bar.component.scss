@@ -1,13 +1,10 @@
-.search-bar{
-    border-radius: 50px 50px 50px 50px;
-    width: 60%;   
-    background-color: white;
-  
+.search-bar {
+  border-radius: 50px 50px 50px 50px;
+  margin: auto;
+  width: 60%;
+  background-color: white;
 }
 
-
-
 mat-form-field.mat-form-field {
-    font-size: 16px;    
-  }
-
+  font-size: 14px;
+}
