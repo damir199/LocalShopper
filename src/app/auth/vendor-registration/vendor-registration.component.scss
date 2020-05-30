@@ -1,36 +1,19 @@
-/**
-
-
-  
-  mat-form-field {
-    margin-left: 10%;
-    width: 80%;
-  }
-  
-
-  
-  button {
-    width: 80%;
-    margin-left: 10%;
-  }
-  **/
-
 .wrapper {
   text-align: center;
-
-  background-image: url("src/assets/images/store2.jpg");
-  background-size: cover;
-  height: 50%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
 }
+
 .content {
   width: auto;
   display: block;
 }
 mat-card {
-  margin: auto;
-  width: 28%;
+  margin: 5% auto;
+  width: 40%;
+}
+mat-form-field {
+  width: 80%;
+}
+
+button {
+  width: 80%;
 }
