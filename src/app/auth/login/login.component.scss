@@ -1,31 +1,19 @@
+.wrapper {
+  text-align: center;
+}
+
+.content {
+  width: auto;
+  display: block;
+}
 mat-card {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  margin: 5% auto;
   width: 40%;
-  }
-  
-  mat-form-field {
-    width: 80%;
-  }
-  
+}
+mat-form-field {
+  width: 80%;
+}
 
-  
-  button {
-    width: 80%;
-   
-  }
-
- 
-
-  .wrapper{
-    text-align: center;
-  }
-
-  .content{
-    width: auto;
-    display: block;
-  }
-  
+button {
+  width: 80%;
+}
