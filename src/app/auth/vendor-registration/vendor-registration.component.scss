@@ -1,16 +1,29 @@
+//center everything
 .wrapper {
   text-align: center;
 }
-
+//bacground image and styling
+.bg {
+  background-image: url("src/assets/images/store2.jpg");
+  background-size: cover;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .content {
   width: auto;
-  margin-top: 3%;
   display: block;
 }
-mat-card {
-  margin: auto;
+//positioning of form center
+.form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 40%;
 }
+//Inner Form CSS
 mat-form-field {
   width: 80%;
 }

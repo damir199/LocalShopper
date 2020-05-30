@@ -1,127 +1,131 @@
 <div class="wrapper">
-  <div class="content">
-    <mat-card>
-      <form
-        (submit)="onVendorRegister(vendorregisterForm)"
-        #vendorregisterForm="ngForm"
-      >
-        <mat-form-field>
-          <input
-            matInput
-            name="name"
-            ngModel
-            placeholder="Name"
-            #nameInput="ngModel"
-            required
-          />
-          <mat-error *ngIf="nameInput.invalid"
-            >Please enter your name</mat-error
+  <div class="bg">
+    <div class="content">
+      <div class="form">
+        <mat-card>
+          <form
+            (submit)="onVendorRegister(vendorregisterForm)"
+            #vendorregisterForm="ngForm"
           >
-        </mat-form-field>
-        <br />
-        <mat-form-field>
-          <input
-            matInput
-            name="CompanyName"
-            ngModel
-            placeholder="Company Name"
-            #nameInput="ngModel"
-            required
-            CompanyName
-          />
-          <mat-error *ngIf="nameInput.invalid"
-            >Please enter the business name</mat-error
-          >
-        </mat-form-field>
-        <br />
-        <mat-form-field>
-          <input
-            matInput
-            name="CompanyAddress"
-            ngModel
-            placeholder="Company Address"
-            #nameInput="ngModel"
-            required
-            CompanyAddress
-          />
-          <mat-error *ngIf="nameInput.invalid"
-            >Please enter the business name</mat-error
-          >
-        </mat-form-field>
-        <br />
-        <mat-form-field>
-          <input
-            matInput
-            name="CompanyPostcode"
-            ngModel
-            placeholder="Company Postcode"
-            #nameInput="ngModel"
-            required
-            CompanyPostcode
-          />
-          <mat-error *ngIf="nameInput.invalid"
-            >Please enter the business name</mat-error
-          >
-        </mat-form-field>
-        <br />
-        <mat-form-field>
-          <input
-            matInput
-            name="CompanyContact"
-            ngModel
-            placeholder="Company Contact Number"
-            #nameInput="ngModel"
-            required
-            CompanyContact
-          />
-          <mat-error *ngIf="nameInput.invalid"
-            >Please enter the business name</mat-error
-          >
-        </mat-form-field>
-        <br />
-        <mat-form-field>
-          <input
-            matInput
-            name="email"
-            ngModel
-            type="email"
-            placeholder="Email"
-            #emailInput="ngModel"
-            required
-            email
-          />
-          <mat-error *ngIf="emailInput.invalid"
-            >Please enter a valid email.</mat-error
-          >
-        </mat-form-field>
-        <br />
-        <mat-form-field>
-          <input
-            matInput
-            name="password"
-            ngModel
-            type="password"
-            placeholder="Password"
-            #passwordInput="ngModel"
-            required
-            password
-          />
-          <mat-error *ngIf="passwordInput.invalid"
-            >Please enter a valid password.</mat-error
-          >
-        </mat-form-field>
+            <mat-form-field>
+              <input
+                matInput
+                name="name"
+                ngModel
+                placeholder="Name"
+                #nameInput="ngModel"
+                required
+              />
+              <mat-error *ngIf="nameInput.invalid"
+                >Please enter your name</mat-error
+              >
+            </mat-form-field>
+            <br />
+            <mat-form-field>
+              <input
+                matInput
+                name="CompanyName"
+                ngModel
+                placeholder="Company Name"
+                #nameInput="ngModel"
+                required
+                CompanyName
+              />
+              <mat-error *ngIf="nameInput.invalid"
+                >Please enter the business name</mat-error
+              >
+            </mat-form-field>
+            <br />
+            <mat-form-field>
+              <input
+                matInput
+                name="CompanyAddress"
+                ngModel
+                placeholder="Company Address"
+                #nameInput="ngModel"
+                required
+                CompanyAddress
+              />
+              <mat-error *ngIf="nameInput.invalid"
+                >Please enter the business name</mat-error
+              >
+            </mat-form-field>
+            <br />
+            <mat-form-field>
+              <input
+                matInput
+                name="CompanyPostcode"
+                ngModel
+                placeholder="Company Postcode"
+                #nameInput="ngModel"
+                required
+                CompanyPostcode
+              />
+              <mat-error *ngIf="nameInput.invalid"
+                >Please enter the business name</mat-error
+              >
+            </mat-form-field>
+            <br />
+            <mat-form-field>
+              <input
+                matInput
+                name="CompanyContact"
+                ngModel
+                placeholder="Company Contact Number"
+                #nameInput="ngModel"
+                required
+                CompanyContact
+              />
+              <mat-error *ngIf="nameInput.invalid"
+                >Please enter the business name</mat-error
+              >
+            </mat-form-field>
+            <br />
+            <mat-form-field>
+              <input
+                matInput
+                name="email"
+                ngModel
+                type="email"
+                placeholder="Email"
+                #emailInput="ngModel"
+                required
+                email
+              />
+              <mat-error *ngIf="emailInput.invalid"
+                >Please enter a valid email.</mat-error
+              >
+            </mat-form-field>
+            <br />
+            <mat-form-field>
+              <input
+                matInput
+                name="password"
+                ngModel
+                type="password"
+                placeholder="Password"
+                #passwordInput="ngModel"
+                required
+                password
+              />
+              <mat-error *ngIf="passwordInput.invalid"
+                >Please enter a valid password.</mat-error
+              >
+            </mat-form-field>
 
-        <br />
-        <button
-          style="margin-bottom: 0.5em;"
-          mat-raised-button
-          color="primary"
-          type="submit"
-        >
-          Submit
-        </button>
-        <button mat-button routerLink="/">Back</button>
-      </form>
-    </mat-card>
+            <br />
+            <button
+              style="margin-bottom: 0.5em;"
+              mat-raised-button
+              color="primary"
+              type="submit"
+            >
+              Submit
+            </button>
+            <button mat-button routerLink="/">Back</button>
+          </form>
+        </mat-card>
+      </div>
+    </div>
   </div>
 </div>
