@@ -5,6 +5,7 @@ import { Router } from "@angular/router";
 
 import { AuthData } from "./auth-data.model";
 import { LoginAuthData } from "./login-auth.model";
+import { VendorAuthData } from "./vendor-auth.model";
 
 @Injectable({
   providedIn: "root",
@@ -17,18 +18,40 @@ export class AuthService {
 
   constructor(private http: HttpClient, private router: Router) {}
 
-  getToken() {
-    return this.token;
+  ///VENDOR AUTH PARTS - POSSIBY MOVE TO OTHER SERVICE FOR VENDOR STUFF.
+  registerVendor(
+    name: string,
+    companyName: string,
+    companyAddress: string,
+    companyPostcode: string,
+    companyContact: string,
+    email: string,
+    password: string
+  ) {
+    const vendorAuthData: VendorAuthData = {
+      name: name,
+      companyName: companyName,
+      companyAddress: companyAddress,
+      companyPostcode: companyPostcode,
+      companyContact: companyContact,
+      email: email,
+      password: password,
+    };
+    return this.http
+      .post("http://localhost:3000/api/vendors/register", vendorAuthData)
+      .subscribe(
+        () => {
+          console.log(vendorAuthData);
+          this.router.navigate(["/auth/login"]);
+        },
+        (error) => {
+          console.log(vendorAuthData);
+          this.authStatusListener.next(false);
+        }
+      );
   }
 
-  getisAuth() {
-    return this.isAuthenticated;
-  }
-
-  getAuthStatusListener() {
-    return this.authStatusListener.asObservable();
-  }
-
+  //USER LOGIN, LOGOUT AND REGISTRATION
   register(name: string, email: string, password: string) {
     const authData: AuthData = {
       name: name,
@@ -80,6 +103,15 @@ export class AuthService {
       );
   }
 
+  logout() {
+    this.token = null;
+    this.isAuthenticated = false;
+    this.authStatusListener.next(false);
+    clearTimeout(this.tokenTimer);
+    this.router.navigate(["/auth/login"]);
+    this.clearAuthData();
+  }
+  //CHECK IF USER HAS A TOKEN TO KEEP THEM LOGGED IN WHEN RETURNING
   autoAuthUser() {
     const authInfo = this.getAuthData();
     if (!authInfo) {
@@ -95,13 +127,17 @@ export class AuthService {
     }
   }
 
-  logout() {
-    this.token = null;
-    this.isAuthenticated = false;
-    this.authStatusListener.next(false);
-    clearTimeout(this.tokenTimer);
-    this.router.navigate(["/auth/login"]);
-    this.clearAuthData();
+  //AUTH & TOKEN FUNCTIONS
+  getToken() {
+    return this.token;
+  }
+
+  getisAuth() {
+    return this.isAuthenticated;
+  }
+
+  getAuthStatusListener() {
+    return this.authStatusListener.asObservable();
   }
 
   private setAuthTimer(duration: number) {

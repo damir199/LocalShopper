@@ -1,23 +1,19 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { HttpClientModule } from "@angular/common/http";
+import { RouterModule } from "@angular/router";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
-import { AngularMaterialModule } from 'src/app/modules/angular-material/angular-material.module';
-import { SearchBarComponent } from '../search-bar/search-bar.component';
-import { HeaderComponent } from '../header/header.component';
-import { FooterComponent } from '../footer/footer.component';
+import { AngularMaterialModule } from "src/app/modules/angular-material/angular-material.module";
+import { SearchBarComponent } from "../search-bar/search-bar.component";
+import { HeaderComponent } from "../header/header.component";
+import { FooterComponent } from "../footer/footer.component";
 import { FlexLayoutModule } from "@angular/flex-layout";
 
-
-import { ErrorComponent } from 'src/app/error/error/error.component';
-import { VendorRegistrationComponent } from 'src/app/auth/vendor-registration/vendor-registration.component';
-import { ProductComponent } from 'src/app/components/product/product.component';
-import { StoreComponent } from 'src/app/components/store/store.component';
-import { LandingSearchComponent } from 'src/app/components/landing-search/landing-search.component';
-
-
+import { ErrorComponent } from "src/app/error/error/error.component";
+import { ProductComponent } from "src/app/components/product/product.component";
+import { StoreComponent } from "src/app/components/store/store.component";
+import { LandingSearchComponent } from "src/app/components/landing-search/landing-search.component";
 
 @NgModule({
   declarations: [
@@ -25,12 +21,9 @@ import { LandingSearchComponent } from 'src/app/components/landing-search/landin
     FooterComponent,
     SearchBarComponent,
     ErrorComponent,
-    VendorRegistrationComponent,
     ProductComponent,
     StoreComponent,
-    LandingSearchComponent
-
-
+    LandingSearchComponent,
   ],
   imports: [
     CommonModule,
@@ -41,18 +34,15 @@ import { LandingSearchComponent } from 'src/app/components/landing-search/landin
     ReactiveFormsModule,
     AngularMaterialModule,
     FlexLayoutModule,
-
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     SearchBarComponent,
     ErrorComponent,
-    VendorRegistrationComponent,
     ProductComponent,
     StoreComponent,
-    LandingSearchComponent
-
+    LandingSearchComponent,
   ],
 })
-export class SharedModule { }
+export class SharedModule {}
