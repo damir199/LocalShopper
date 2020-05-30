@@ -1,13 +1,30 @@
+@media screen and (max-width: 414px) {
+  .content {
+    height: 100%;
+    padding-top: 30% !important;
+  }
+}
+
 .wrapper {
   text-align: center;
+  background-image: url("src/assets/images/store2.jpg");
+  background-size: cover;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .content {
+  //padding-top: 5%;
   width: auto;
+
   display: block;
 }
+.form {
+  padding-top: 15%;
+}
 mat-card {
-  margin: 5% auto;
+  margin: auto;
   width: 40%;
 }
 mat-form-field {
