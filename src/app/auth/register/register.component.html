@@ -1,60 +1,64 @@
-<div>
-  <mat-card>
-    <form (submit)="onRegister(registerForm)" #registerForm="ngForm">
-      <mat-form-field>
-        <input
-          matInput
-          name="name"
-          ngModel
-          placeholder="Name"
-          #nameInput="ngModel"
-          required
-        />
-        <mat-error *ngIf="nameInput.invalid">Please enter your name</mat-error>
-      </mat-form-field>
-      <br />
-      <mat-form-field>
-        <input
-          matInput
-          name="email"
-          ngModel
-          type="email"
-          placeholder="Email"
-          #emailInput="ngModel"
-          required
-          email
-        />
-        <mat-error *ngIf="emailInput.invalid"
-          >Please enter a valid email.</mat-error
-        >
-      </mat-form-field>
-      <br />
-      <mat-form-field>
-        <input
-          matInput
-          name="password"
-          ngModel
-          type="password"
-          placeholder="Password"
-          #passwordInput="ngModel"
-          required
-          password
-        />
-        <mat-error *ngIf="passwordInput.invalid"
-          >Please enter a valid password.</mat-error
-        >
-      </mat-form-field>
+<div class="wrapper">
+  <div class="content">
+    <mat-card>
+      <form (submit)="onRegister(registerForm)" #registerForm="ngForm">
+        <mat-form-field>
+          <input
+            matInput
+            name="name"
+            ngModel
+            placeholder="Name"
+            #nameInput="ngModel"
+            required
+          />
+          <mat-error *ngIf="nameInput.invalid"
+            >Please enter your name</mat-error
+          >
+        </mat-form-field>
+        <br />
+        <mat-form-field>
+          <input
+            matInput
+            name="email"
+            ngModel
+            type="email"
+            placeholder="Email"
+            #emailInput="ngModel"
+            required
+            email
+          />
+          <mat-error *ngIf="emailInput.invalid"
+            >Please enter a valid email.</mat-error
+          >
+        </mat-form-field>
+        <br />
+        <mat-form-field>
+          <input
+            matInput
+            name="password"
+            ngModel
+            type="password"
+            placeholder="Password"
+            #passwordInput="ngModel"
+            required
+            password
+          />
+          <mat-error *ngIf="passwordInput.invalid"
+            >Please enter a valid password.</mat-error
+          >
+        </mat-form-field>
 
-      <br />
-      <button
-        style="margin-bottom: 0.5em;"
-        mat-raised-button
-        color="primary"
-        type="submit"
-      >
-        Submit
-      </button>
-      <button mat-button routerLink="/auth/login">Back</button>
-    </form>
-  </mat-card>
+        <br />
+        <button
+          style="margin-bottom: 0.5em;"
+          mat-raised-button
+          color="primary"
+          type="submit"
+        >
+          Submit
+        </button>
+        <button mat-button routerLink="/auth/login">Back</button>
+      </form>
+    </mat-card>
+  </div>
 </div>

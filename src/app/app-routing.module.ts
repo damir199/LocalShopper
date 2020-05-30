@@ -5,6 +5,7 @@ import { StoreComponent } from './components/store/store.component';
 import { AuthGuard } from './auth/auth.guard';
 import { ProductComponent } from './components/product/product.component';
 import { LandingSearchComponent } from './components/landing-search/landing-search.component';
+import { VendorDashboardComponent } from './components/vendor-dashboard/vendor-dashboard.component';
 
 
 
@@ -28,6 +29,10 @@ const routes: Routes = [
       {
         path: "products",
         component: ProductComponent,
+      },
+      {
+        path: "Dashboard",
+        component: VendorDashboardComponent,
       },
     ]
   },
